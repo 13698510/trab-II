@@ -1,0 +1,228 @@
+body {
+
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+}
+
+h1,h2,h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkcyan;
+}
+.botao {
+color: darkcyan;
+text-decoration: 10px 30px;
+background-color: darkcyan;
+color: rgb(16, 16, 105);
+
+}
+/Navegação */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkcyan;
+}
+nav > a {
+    text-decoration: none;
+    color: rgb(16, 16, 105);
+    font-weight: 800;
+    font-size: 32px;
+    font-family: yellow, serif;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+
+
+}
+nav ul li {
+    text-align: center;
+    width: 50%;
+
+}
+nav ul li a {
+display: inline-block;
+padding: 10px 0;
+width: 50%;
+text-decoration: none;
+color: brack;
+
+}
+header {
+display: flex;
+flex-direction: column;
+align-items: center;
+background-image: url("../img/seguros.png");
+background-size: cover;
+background-repeat: no-repeat;
+background-position:center;
+color: black;
+text-align: center;
+padding: 20px;
+
+}
+
+header h1 {
+color: black;
+
+}
+
+header p {
+    margin-bottom: 2em;
+
+}
+
+#Sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px 20px 20px;
+    background-color: darkcyan;
+    color: black;
+
+}
+
+#Sobre p {
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+
+}
+#Sobre.botao {
+    background-color: darkcyan;
+    color: black;
+
+}
+/*Seguros*/
+#Seguros {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    
+}
+
+
+#Seguros div {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+margin-top: 30px;
+
+}
+#fotos h2 {
+    margin-bottom: 20px;
+}
+
+#fotos img
+{
+
+    width: 150%;
+
+}
+
+#Contatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#contatos h2 {
+    color: black;
+
+}
+
+footer {  
+    text-align: center;
+    padding: 10px;
+    background-color:darkcyan ;
+    color: black;
+
+
+}
+
+footer a {
+    text-decoration: none;
+    color: blue;
+
+}
+ 
+@media screen and (min-width: 768px) {
+
+    nav {
+
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+    nav ul {
+        flex-direction: row;
+        width: 0%;
+
+    }
+
+/*cabeçalho*/
+
+header {
+height: 50px;
+height: 60vh;
+justify-content: center;
+}
+
+/*sobre*/
+#Sobre { 
+    height: 250px;
+    height: 30vh;
+    justify-content: center;
+    min-height: 250px;
+}
+
+/*seguros*/
+#Seguros {
+flex-direction: row;
+flex-wrap: wrap;
+align-items: flex-start;
+max-width: 400px;
+margin: 0 auto;
+justify-content: center;
+}
+
+#seguros h2 {
+text-align: center;
+width: 0%;
+
+}
+#Seguros div {
+    flex-grow: 1;
+    flex-basis: 100px;
+    padding: 0 100px;
+
+
+}
+/*Contatos*/
+#Contatos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 400px;
+    margin: 0 auto;
+
+    
+}
+#Contatos h2, #Contatos p{
+    width: 100%;
+}
+
+}
+
